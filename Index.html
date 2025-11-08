@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-semibold">EH</div>
+        <span class="text-xl font-semibold">Engineering Hub</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About Us</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#careers" class="hover:underline">Careers</a>
+        <a href="#news" class="hover:underline">News</a>
+        <a href="#contact" class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm">Contact Us</a>
+      </nav>
+      <button class="md:hidden p-2 rounded-md border border-gray-200">Menu</button>
+    </div>
+  </header>
+
+  <!-- Hero with Offline Image -->
+  <section id="home" class="relative h-[80vh] flex items-center justify-center text-center text-white bg-fixed bg-cover bg-center" 
+           style="background-image: url('images/hero.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+      <h1 class="text-4xl md:text-5xl font-bold">Engineers Unite</h1>
+      <p class="mt-4 text-lg">A dedicated platform designed exclusively for engineers to find professional and freelance opportunities seamlessly.</p>
+      <div class="mt-6 flex gap-4 justify-center">
+        <a href="#explore" class="px-6 py-3 bg-indigo-600 text-white rounded-md shadow">Join</a>
+        <a href="#benefits" class="px-6 py-3 border border-gray-200 rounded-md bg-white/10">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content (Benefits, Explore, etc. same as before) -->
+   <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Benefits -->
+    <section id="benefits" class="mt-14">
+      <h2 class="text-2xl font-semibold">Our Benefits</h2>
+      <div class="mt-6 grid sm:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:-translate-y-2 transition">
+          <h3 class="font-semibold text-lg">Freelance Opportunities</h3>
+          <p class="mt-2 text-gray-600">Explore freelance roles that align with your skills and interests.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:-translate-y-2 transition">
+          <h3 class="font-semibold text-lg">Admin Dashboard</h3>
+          <p class="mt-2 text-gray-600">Access a user-friendly dashboard for managing projects and tasks.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:-translate-y-2 transition">
+          <h3 class="font-semibold text-lg">User Onboarding</h3>
+          <p class="mt-2 text-gray-600">A simplified onboarding process for new users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore (Engineering Fields) -->
+    <section id="explore" class="mt-14">
+      <h2 class="text-2xl font-semibold">Explore Engineering Fields</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Electrical -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/electrical.jpg" alt="Electrical Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Electrical Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Join Us</a>
+          </div>
+        </div>
+
+        <!-- Civil -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/civil.jpg" alt="Civil Engineers" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Civil Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Submit Work</a>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/software.jpg" alt="Software Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Software Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Find Projects</a>
+          </div>
+        </div>
+
+        <!-- Architectural -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/architectural.jpg" alt="Architectural Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Architectural Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Mechanical -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/mechanical.jpg" alt="Mechanical Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Mechanical Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Explore</a>
+          </div>
+        </div>
+
+        <!-- Chemical -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/chemical.jpg" alt="Chemical Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Chemical Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Research</a>
+          </div>
+        </div>
+
+        <!-- Aerospace -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/aerospace.jpg" alt="Aerospace Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Aerospace Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Innovate</a>
+          </div>
+        </div>
+
+        <!-- Biomedical -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="images/biomedical.jpg" alt="Biomedical Engineer" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Biomedical Engineering</h4>
+            <a href="#" class="mt-3 inline-block text-sm px-4 py-2 border rounded-md">Contribute</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mt-14 bg-white p-6 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold">What engineers say</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <blockquote class="p-4 border-l-4 border-indigo-200">
+          <p class="text-gray-700">“The platform is user-friendly and tailored for engineers.”</p>
+          <footer class="mt-3 text-sm text-gray-500">Mark Rodriguez</footer>
+        </blockquote>
+        <blockquote class="p-4 border-l-4 border-indigo-200">
+          <p class="text-gray-700">“I've successfully landed freelance projects through Engineering Hub.”</p>
+          <footer class="mt-3 text-sm text-gray-500">Aisha Patel</footer>
+        </blockquote>
+        <blockquote class="p-4 border-l-4 border-indigo-200">
+          <p class="text-gray-700">“I'm impressed with the resources and networking available.”</p>
+          <footer class="mt-3 text-sm text-gray-500">Daniel Kim</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-14 bg-white p-6 rounded-lg shadow-sm">
+      <h3 class="text-xl font-semibold">Contact us</h3>
+      <form class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input placeholder="First name" class="border px-3 py-2 rounded-md" />
+        <input placeholder="Last name" class="border px-3 py-2 rounded-md" />
+        <input placeholder="Email*" class="md:col-span-2 border px-3 py-2 rounded-md" />
+        <textarea placeholder="Message*" class="md:col-span-2 border px-3 py-2 h-32 rounded-md"></textarea>
+        <button type="submit" class="md:col-span-2 bg-indigo-600 text-white px-6 py-2 rounded-md">Submit</button>
+      </form>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="mt-14 bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold">About Us</h2>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        At <span class="font-semibold">Engineering Hub</span>, we believe in connecting engineers from every discipline to unlock global opportunities. 
+        Whether you are a freelancer seeking projects, a professional building your career, or a student exploring possibilities, 
+        our platform offers resources, networking, and tools tailored for you.
+      </p>
+      <p class="mt-3 text-gray-600 leading-relaxed">
+        We bring together Civil, Electrical, Software, Mechanical, and many more under one roof, 
+        encouraging collaboration and innovation across industries. With our seamless platform, 
+        engineers can showcase their work, apply for jobs, and engage in meaningful projects worldwide.
+      </p>
+    </section>
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer class="mt-12 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+      <div>© <span id="year"></span> Engineering Hub</div>
+      <div class="mt-3 md:mt-0 flex gap-4">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copilot Widget -->
+  <div id="copilot-widget" class="fixed bottom-6 right-6">
+    <button id="open-chat" class="bg-indigo-600 text-white px-4 py-3 rounded-full shadow-lg">💬 Chat</button>
+    <div id="chat-box" class="hidden mt-3 w-80 bg-white rounded-lg shadow-lg border p-4 flex flex-col">
+      <div class="flex justify-between items-center">
+        <h4 class="font-semibold">Engineering Hub Assistant</h4>
+        <button id="close-chat" class="text-gray-500">✖</button>
+      </div>
+      <div id="chat-messages" class="mt-3 h-56 overflow-y-auto text-sm text-gray-700 space-y-2">
+        <div class="p-2 bg-gray-100 rounded-md self-start">Hello 👋 How can I assist you today?</div>
+      </div>
+      <div class="mt-3 flex">
+        <input id="chat-input" type="text" placeholder="Type your message..." class="flex-1 border px-3 py-2 rounded-l-md text-sm" />
+        <button id="send-chat" class="bg-indigo-600 text-white px-4 rounded-r-md">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Footer Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Chat Widget Controls
+    const openBtn = document.getElementById("open-chat");
+    const closeBtn = document.getElementById("close-chat");
+    const chatBox = document.getElementById("chat-box");
+    const chatMessages = document.getElementById("chat-messages");
+    const chatInput = document.getElementById("chat-input");
+    const sendChat = document.getElementById("send-chat");
+
+    openBtn.addEventListener("click", () => chatBox.classList.toggle("hidden"));
+    closeBtn.addEventListener("click", () => chatBox.classList.add("hidden"));
+
+    function addMessage(content, sender = "user") {
+      const msg = document.createElement("div");
+      msg.className = sender === "user"
+        ? "p-2 bg-indigo-600 text-white rounded-md self-end max-w-[80%]"
+        : "p-2 bg-gray-100 rounded-md self-start max-w-[80%]";
+      msg.textContent = content;
+      chatMessages.appendChild(msg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function botReply(userText) {
+      let reply = "I'm here to help with Engineering Hub related queries!";
+      if (userText.toLowerCase().includes("job")) {
+        reply = "You can explore jobs in the 'Careers' section.";
+      } else if (userText.toLowerCase().includes("contact")) {
+        reply = "You can reach us via the Contact Us form at the bottom.";
+      } else if (userText.toLowerCase().includes("hello")) {
+        reply = "Hello! How’s your engineering journey going?";
+      }
+      setTimeout(() => addMessage(reply, "bot"), 600);
+    }
+
+    sendChat.addEventListener("click", () => {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      addMessage(text, "user");
+      chatInput.value = "";
+      botReply(text);
+    });
+
+    chatInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        sendChat.click();
+      }
+    });
+  </script>
+</body>
+</html>
